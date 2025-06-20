@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - Version-v*
+  push:
+    branches:
+      - auto*
 
 jobs:
   auto-update:
