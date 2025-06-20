@@ -3286,8 +3286,8 @@
   "networkNameTestnet": {
     "message": "Testnet"
   },
-  "networkNameZkSyncEra": {
-    "message": "zkSync Era"
+  "networkNameZKsyncEra": {
+    "message": "Zksync Era"
   },
   "networkOptions": {
     "message": "网络选项"
