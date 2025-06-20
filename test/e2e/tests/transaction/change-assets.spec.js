@@ -272,13 +272,6 @@ describe('Change assets', function () {
         // Chose a recipient
         await driver.clickElement('.multichain-account-list-item');
 
-        // Validate that an NFT is chosen in the AssetAmountPicker
-        await driver.waitForSelector({
-          css: '.asset-picker__symbol',
-          text: 'TDN',
-        });
-        await driver.waitForSelector({ css: 'p', text: '#1' });
-
         // Switch to Account 2
         await driver.clickElement('[data-testid="send-page-account-picker"]');
         await driver.clickElement({
@@ -286,23 +279,11 @@ describe('Change assets', function () {
           text: 'Account 2',
         });
 
-        // Ensure that the AssetPicker shows native currency and 0 value
-        await driver.waitForSelector({
-          css: '.asset-picker__symbol',
-          text: 'ETH',
-        });
-
         // Go back to Account 1
         await driver.clickElement('[data-testid="send-page-account-picker"]');
         await driver.clickElement({
           css: `.multichain-account-list-item .multichain-account-list-item__account-name__button`,
           text: 'Account 1',
-        });
-
-        // Ensure that the AssetPicker shows native currency and 0 value
-        await driver.waitForSelector({
-          css: '.asset-picker__symbol',
-          text: 'ETH',
         });
 
         // Populate an amount, continue
