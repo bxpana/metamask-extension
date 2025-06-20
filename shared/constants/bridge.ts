@@ -68,8 +68,8 @@ export const NETWORK_TO_SHORT_NETWORK_NAME_MAP: Record<
   [CHAIN_IDS.OPTIMISM]: NETWORK_TO_NAME_MAP[CHAIN_IDS.OPTIMISM],
   [toEvmCaipChainId(CHAIN_IDS.OPTIMISM)]:
     NETWORK_TO_NAME_MAP[CHAIN_IDS.OPTIMISM],
-  [CHAIN_IDS.ZKSYNC_ERA]: 'ZkSync Era',
-  [toEvmCaipChainId(CHAIN_IDS.ZKSYNC_ERA)]: 'ZkSync Era',
+  [CHAIN_IDS.ZKSYNC_ERA]: 'ZKsync Era',
+  [toEvmCaipChainId(CHAIN_IDS.ZKSYNC_ERA)]: 'Zksync Era',
   [CHAIN_IDS.BASE]: 'Base',
   [toEvmCaipChainId(CHAIN_IDS.BASE)]: 'Base',
   [CHAIN_IDS.SEI]: 'Sei',
