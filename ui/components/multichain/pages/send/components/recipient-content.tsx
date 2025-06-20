@@ -165,8 +165,8 @@ export const SendPageRecipientContent = ({
             }
             // eslint-disable-next-line react-hooks/rules-of-hooks
             onAssetChange={useCallback(
-              (newAsset) => onAssetChange(newAsset, true),
-              [onAssetChange],
+              (newAsset) => onAssetChange(newAsset, isSwapAllowed),
+              [isSwapAllowed, onAssetChange],
             )}
             isAmountLoading={isLoadingInitialQuotes}
             amount={amount}
